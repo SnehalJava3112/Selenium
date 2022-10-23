@@ -14,7 +14,7 @@ public class Other_PopUp
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Java_Project\\Selenium\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		//driver.manage().window().maximize();
+		
 		driver.get("https://chandanachaitanya.github.io/selenium-practice-site/?languages=Java&enterText=");
 		Thread.sleep(2000);
 		
@@ -41,7 +41,7 @@ public class Other_PopUp
 		Alert prmtbox = driver.switchTo().alert();
 		System.out.println("Prompt box text = "+prmtbox.getText());
 		prmtbox.accept();
-		//prmtbox.dismiss();	//choose one a time
+		//prmtbox.dismiss();	//choose one at a time
 		Thread.sleep(2000);
 		
 		driver.close();

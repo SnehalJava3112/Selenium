@@ -57,3 +57,9 @@ public class Single_Window_Browser
 		driver.switchTo().window(al.get(0));
 	}
 }*/
+
+/*1. Navigate to https://www.onlinesbi.sbi/
+2. click on SBI Salary Account
+3. Click on SBI Mutual Fund
+4. get text and use sendkeys on these child browser
+5. print all window Ids*/

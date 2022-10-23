@@ -27,12 +27,7 @@ public class ScreenShot_Amazon
 		Thread.sleep(2000);
 		
 //1. full webpage screenshot
-		int a=10;
-		byte b;
-		b=(byte)a;
-		System.out.println("b = "+b);
 		
-		// type casting like above
 		TakesScreenshot t = (TakesScreenshot)driver;
 		File source = t.getScreenshotAs(OutputType.FILE);
 		System.out.println("Original path of screenshot file = "+source);

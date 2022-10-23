@@ -30,6 +30,7 @@ public class Facebook_LogIn
 // or	
 		driver.findElement(By.partialLinkText("gotten passw")).click();
 		Thread.sleep(2000);
+	
 
 		driver.findElement(By.cssSelector("#identify_email")).sendKeys("pineapple@gmail.com");
 		Thread.sleep(1000);

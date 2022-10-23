@@ -13,8 +13,7 @@ public class FindElement_GSearch
 		System.setProperty("webdriver.edge.driver", "C:\\Java_Project\\Selenium\\Driver\\msedgedriver.exe");
 		WebDriver driver = new EdgeDriver();
 		
-		driver.manage().window().maximize();
-		
+		//driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		Thread.sleep(1000);
 		

@@ -13,7 +13,7 @@ public class All_Browsers
 	{
 		
 		WebDriver driver = null;
-		String browser = "chromeA";
+		String browser = "fireopplfox";
 		
 //Edge browser
 		if(browser.equals("edge"))
@@ -45,11 +45,9 @@ public class All_Browsers
 		driver.get("https://www.flipkart.com");
 		Thread.sleep(2000); 
 		
-		String text = driver.findElement(By.xpath("(//h2[@class='_2cAig-'])[1]")).getText();
+		String text = driver.findElement(By.xpath("//*[@class='_1_3w1N']")).getText();
 		System.out.println("Text of line = "+text);
 		Thread.sleep(2000);
-		
-		System.out.println("Pass");
 		driver.close();
 	}
 }

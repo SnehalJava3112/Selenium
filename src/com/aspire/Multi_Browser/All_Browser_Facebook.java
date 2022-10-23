@@ -3,6 +3,8 @@ package com.aspire.Multi_Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class All_Browser_Facebook
@@ -11,7 +13,8 @@ public class All_Browser_Facebook
 	{
 		
 		WebDriver driver = null;
-		String browser = "";
+		String browser = "firefox"; // For headless browser -> String browser = "";
+		
 		if (browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Java_Project\\Selenium\\Driver\\chromedriver.exe");
@@ -21,13 +24,13 @@ public class All_Browser_Facebook
 		else if (browser.equals("edge"))
 		{
 			System.setProperty("webdriver.edge.driver", "C:\\Java_Project\\Selenium\\Driver\\msedgedriver.exe");
-			driver = new ChromeDriver();
+			driver = new EdgeDriver();
 			System.out.println("Edge Browser running");
 		}
 		else if (browser.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "C:\\Java_Project\\Selenium\\Driver\\geckodriver.exe");
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver();
 			System.out.println("FireFox Browser running");
 		}
 		else

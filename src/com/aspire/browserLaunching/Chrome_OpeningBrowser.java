@@ -9,11 +9,12 @@ public class Chrome_OpeningBrowser
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Java_Project\\Selenium\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Java_Project\\Selenium\\Driver_1\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.w3schools.com/");
-		Thread.sleep(500);
+		driver.navigate().to("http://www.google.com");
+		Thread.sleep(2000);
 		
 		driver.close();
 		

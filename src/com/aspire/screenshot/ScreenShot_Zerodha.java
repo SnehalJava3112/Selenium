@@ -36,6 +36,7 @@ public class ScreenShot_Zerodha
 		
 		Date d = new Date();
 		String timestamp = d.toString().replace(":", "_").replace(" ", "_");
+		
 		File desti_1 = new File("C:\\Java_Project\\Selenium\\Screenshot\\Zerodha\\"+timestamp+".jpg");
 		FileHandler.copy(source, desti_1);		
 		Thread.sleep(2000);
